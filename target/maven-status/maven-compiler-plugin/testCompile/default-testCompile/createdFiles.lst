@@ -1,0 +1,12 @@
+com\mdo\shared\FileProcessing.class
+com\mdo\pages\SsoDashboard.class
+com\mdo\runners\TestRunner.class
+com\mdo\pages\UlpPage.class
+com\mdo\stepdefinitions\TestSsoLogin.class
+com\mdo\shared\JavaScriptExecutions.class
+com\mdo\shared\NavigationManager.class
+com\mdo\pages\SsoLoginPage.class
+com\mdo\shared\DirPathManager.class
+com\mdo\shared\DotenvManager.class
+com\mdo\shared\WebBrowserManager.class
+com\mdo\shared\WebDriverManager.class
