@@ -1,4 +1,4 @@
-Feature: Upload reports via ULP
+Feature: ULP Automation
 
   @ulp
   Scenario: Upload configured reports
