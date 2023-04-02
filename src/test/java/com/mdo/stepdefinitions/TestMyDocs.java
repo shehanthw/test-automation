@@ -53,6 +53,6 @@ public class TestMyDocs extends WebDriverManager {
     @Then("MD_Quit browser")
     public void md_quit_browser() {
         System.out.println("pass");
-//        quiteDriver();
+        quiteDriver();
     }
 }
