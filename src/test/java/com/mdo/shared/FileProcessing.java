@@ -5,7 +5,8 @@ import java.util.ArrayList;
 
 public class FileProcessing extends DirPathManager {
 
-    ArrayList<String> fileList = new ArrayList<String>();
+    ArrayList<String> reportsList = new ArrayList<String>();
+    ArrayList<String> pmsList = new ArrayList<String>();
 
     public String filesToString() {
         File folder = new File(getReportsPath());
@@ -15,10 +16,10 @@ public class FileProcessing extends DirPathManager {
             for (File file : files) {
                 String fileName = file.getName();
 //                adding each file names to the empty array declared above
-                fileList.add(getReportsPath()+fileName);
+                reportsList.add(getReportsPath()+fileName);
             }
         }
-        String result = String.join(" \n ", fileList);
+        String result = String.join(" \n ", reportsList);
         return result;
     }
 

@@ -10,12 +10,12 @@ import java.time.Duration;
 import java.util.Iterator;
 import java.util.Set;
 
-public class WebBrowserManager extends WebDriverManager {
+public class WebBrowserManager {
     private WebDriver driver;
     WebDriverWait wait;
 
     public WebBrowserManager() {
-        driver = getDriver();
+        driver = WebDriverManager.getDriver();
         PageFactory.initElements(driver, this);
         wait = new WebDriverWait(driver, Duration.ofSeconds(60));
     }

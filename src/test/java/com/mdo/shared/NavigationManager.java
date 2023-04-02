@@ -1,19 +1,16 @@
 package com.mdo.shared;
-
-import io.github.cdimascio.dotenv.Dotenv;
-import org.junit.Test;
 import org.openqa.selenium.WebDriver;
 
 public class NavigationManager extends WebDriverManager {
     private WebDriver driver;
     private DirPathManager dirPathManager;
-    private DotenvManager dotenvManager;
+    private PropertiesManager propertiesManager;
 
     public NavigationManager() {
 //      call getDriver method from extended WebDriverManager class
         driver = getDriver();
         dirPathManager = new DirPathManager();
-        dotenvManager = new DotenvManager();
+        propertiesManager = new PropertiesManager();
     }
 
     public void navigateToUrl() {
@@ -25,10 +22,10 @@ public class NavigationManager extends WebDriverManager {
 
         switch (url) {
             case "GEN_SSO_PROD":
-                driver.get(dotenvManager.getEnvValue("GEN_SSO_PROD_URL"));
+                driver.get(propertiesManager.getEnvValue("GEN_SSO_PROD_URL"));
                 break;
             case "GEN_SSO_UAT":
-                driver.get(dotenvManager.getEnvValue("GEN_SSO_UAT_URL"));
+                driver.get(propertiesManager.getEnvValue("GEN_SSO_UAT_URL"));
                 break;
             default:
                return;

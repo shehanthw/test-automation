@@ -10,11 +10,12 @@ public class DirPathManager {
     private String edgeDriverPath = "/src/test/resources/drivers/msedgedriver.exe";
 
 
-//  --------->  reports / static file paths ------------------------------------------------------------------------------------
+//  --------->  reports / static file paths ----------------------------------------------------------------------
     private String reportsContentPath = "/src/test/resources/reports/";
 
 
 //  --------->  property files ------------------------------------------------------------------------------------
+    private String propertyFilePath = "src/test/resources/properties/data.properties";
 
     public String getChromeDriverPath(){
         String webDriverPath = rootPath + chromeDriverPath;
@@ -34,6 +35,11 @@ public class DirPathManager {
     public String getReportsPath() {
         String reportsPath = rootPath + reportsContentPath;
         return reportsPath;
+    }
+
+    public String getPropertiesFilePath() {
+        String propFilePath = rootPath + propertyFilePath;
+        return propFilePath;
     }
 
 }

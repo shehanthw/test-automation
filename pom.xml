@@ -71,7 +71,7 @@
                 <version>3.0.0-M7</version>
                 <configuration>
                     <includes>
-                        <exclude>**/*TestRunner.java</exclude>
+                        <exclude>**/*Runner.java</exclude>
                     </includes>
                 </configuration>
             </plugin>
